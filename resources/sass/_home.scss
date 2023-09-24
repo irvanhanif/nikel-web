@@ -1,0 +1,23 @@
+#app main {
+    width: 100%;
+}
+
+#cardVehicle {
+    &:hover {
+        border: solid 1px blue;
+    }
+}
+.top {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.sectionPage {
+    margin-top: 217.5px;
+}

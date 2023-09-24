@@ -1,0 +1,31 @@
+#sidebar {
+    width: 280px;
+    min-height: 100vh;
+    transition: 1s ease-in;
+}
+.logout-btn {
+    display: none;
+}
+.dropdown-menu {
+    background-color: white;
+}
+@include media-breakpoint-down(lg) {
+    #sidebar {
+        position: absolute;
+        margin-left: -280px;
+        transition: 1s ease-out;
+    }
+}
+@include media-breakpoint-down(md) {
+    .account-nav {
+        display: none;
+    }
+    .logout-btn {
+        display: block;
+    }
+}
+@include media-breakpoint-up(lg) {
+    #leftsideNavbar {
+        display: none;
+    }
+}
